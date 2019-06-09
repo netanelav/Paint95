@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Paint</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row m-2 menu">
+            <div class="col-md-3 box color-pallet">
+                <div class="row first-color-row">
+                    <button id="black" class="col color"></button>
+                    <button id="red" class="col color"></button>
+                    <button id="blue" class="col color"></button>
+                    <button id="pink" class="col color"></button>
+                    <button id="lightblue" class="col color"></button>
+                </div>
+                <div class="row second-color-row">
+                    <button id="yellow" class="col color"></button>
+                    <button id="green" class="col color"></button>
+                    <button id="orange" class="col color"></button>
+                    <button id="purple" class="col color"></button>
+                    <button id="gray" class="col color"></button>
+                </div>
+            </div>
+            <div class="col-md-2 box canvas-size">
+                <div class="row width">
+                    <p id="user-width">Width: &nbsp;<input id="canvas-width" type="text" value="500" size="2">
+                    </p>
+                </div>
+                <div class="row height">
+                    <p id="user-height">Height:&nbsp;<input id="canvas-height" type="text" value="500" size="2">
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 box coordinates">
+                <div class="row">
+                    <p><strong>Canvas Position:</strong></p>
+                </div>
+                <div class="row">
+                    <p id="target-x"></p>
+                    <p id="target-y"></p>
+                </div>
+            </div>
+            <div class="col-md-2 box ">
+                <div class="row mt-1">
+                    <p>Brush Size:</p>
+                </div>
+                <div class="row brush-size m-0">
+                    <button id="plus" class="col-md-4">+</button>
+                    <button id="minus" class="col-md-4">-</button>
+                    <p id="current-size"></p>
+                </div>
+            </div>
+            <div class="col-md-2 box clear-erase">
+                <div class="row buttons">
+                    <div class="col-md-6 p-0">
+                        <button id="eraser"><img class="eraser" src="./images/eraser.png" alt=""></button>
+                    </div>
+                    <div class="col-md-6 p-0">
+                        <button id="fill"><img class="fill-bg" src="./images/fill.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <button id="clear" class="col-md-12">Clear Canvas</button>
+                </div>
+            </div>
+        </div>
+        <div id="draw-board" class="row m-2 canvas"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/Assignment4.js"></script>
+</body>
+
+</html>
