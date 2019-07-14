@@ -9,4 +9,5 @@ The assignment is based on the following subjects:
 
 * JavaScript: Events handling, DOM Manipulation
 * JavaScript basics: objects, functions
-* HTML/CSS/Bootstrap
+* jQuery
+* HTML/CSS, Bootstrap
